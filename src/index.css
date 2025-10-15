@@ -1,0 +1,35 @@
+:root {
+  --main-bg-color: #1b1a33;
+  --secondary-bg-color: #ffe3d8;
+  --accent-text: #ff6b6b;
+  --contrast-color: #1c3f60;
+  --accent-pop: #b9e3c6;
+  --text-color: #0e0e0e;
+
+  background-color: var(--secondary-bg-color);
+}
+h1,
+h3,
+h4,
+h5,
+h6 {
+  color: var(--accent-text);
+}
+h2 {
+  color: #ffffff;
+}
+p,
+li,
+a,
+span,
+div {
+  color: var(--text-color);
+  font-family: "Modak Quicksand", system-ui;
+}
+
+.accent-text {
+  font-family: "Modak", system-ui;
+  font-size: 80px;
+  font-weight: 400;
+  font-style: normal;
+}

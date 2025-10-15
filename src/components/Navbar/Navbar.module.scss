@@ -1,0 +1,25 @@
+.nav {
+  display: flex;
+  position: sticky;
+  top: 0;
+  height: 80px;
+  background-color: var(--main-bg-color);
+  padding: 0 16px 0 16px;
+  border-radius: 0 0 16px 16px;
+  gap: 8px;
+  .spacer {
+    flex: 1;
+  }
+  .btn {
+    background-color: var(--main-bg-color);
+    border: none;
+    color: white;
+    font-size: 16px;
+    border-radius: 8px;
+  }
+
+  .btn:hover {
+    text-decoration: underline var(--accent-pop);
+    cursor: pointer;
+  }
+}
