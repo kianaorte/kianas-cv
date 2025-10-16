@@ -1,7 +1,8 @@
 .page {
   display: flex;
   flex-grow: 1;
+  // flex-direction: row;
   min-height: 960px;
-  width: 1440px;
+  // width: 1440px;
   background-color: var(--secondary-bg-color);
 }

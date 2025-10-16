@@ -1,6 +1,6 @@
 import Navbar from "./components/Navbar/Navbar.tsx";
 import Contact from "./pages/Contact/Contact.tsx";
-import Home from "./pages/Home/Home.tsx";
+// import Home from "./pages/Home/Home.tsx";
 import About from "./pages/About/About.tsx";
 import Projects from "./pages/Projects.tsx";
 import Cv from "./pages/Cv/Cv.tsx";
@@ -9,7 +9,7 @@ import { useRef } from "react";
 const Layout: React.FC = () => {
   const sections = {
     home: useRef<HTMLElement | null>(null),
-    about: useRef<HTMLElement | null>(null),
+    // about: useRef<HTMLElement | null>(null),
     cv: useRef<HTMLElement | null>(null),
     projects: useRef<HTMLElement | null>(null),
   };
@@ -27,10 +27,10 @@ const Layout: React.FC = () => {
   return (
     <>
       <Navbar onNavigate={scrollToSection} sections={sections} />
-      <section ref={sections.home}>
+      {/* <section ref={sections.home}>
         <Home />
-      </section>
-      <section ref={sections.about}>
+      </section> */}
+      <section ref={sections.home}>
         <About />
       </section>
       <section ref={sections.cv}>

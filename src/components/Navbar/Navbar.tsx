@@ -31,25 +31,7 @@ const Navbar: React.FC<NavbarProps> = ({ onNavigate, sections }) => {
       >
         Home
       </button>
-      <button
-        className={styles.btn}
-        onClick={() => {
-          onNavigate(sections.about);
-          navigate("/about");
-        }}
-      >
-        About me
-      </button>
 
-      <button
-        className={styles.btn}
-        onClick={() => {
-          onNavigate(sections.projects);
-          navigate("/projects");
-        }}
-      >
-        Projects
-      </button>
       <button
         className={styles.btn}
         onClick={() => {
@@ -58,6 +40,15 @@ const Navbar: React.FC<NavbarProps> = ({ onNavigate, sections }) => {
         }}
       >
         CV
+      </button>
+      <button
+        className={styles.btn}
+        onClick={() => {
+          onNavigate(sections.projects);
+          navigate("/projects");
+        }}
+      >
+        Projects
       </button>
     </nav>
   );
