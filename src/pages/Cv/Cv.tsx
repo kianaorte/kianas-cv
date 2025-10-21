@@ -43,7 +43,7 @@ const volunteer = [
   },
 ];
 
-const skills = [
+const feSkills = [
   {
     skill: "JavaScript",
     icon: "https://upload.wikimedia.org/wikipedia/commons/6/6a/JavaScript-logo.png",
@@ -68,11 +68,17 @@ const skills = [
     skill: "Vue",
     icon: "https://upload.wikimedia.org/wikipedia/commons/9/95/Vue.js_Logo_2.svg",
   },
-  // { skill: "Snyk", icon: null },
-  { skill: "Git", icon: Git },
+];
+
+const testingSkills = [
   { skill: "Jest", icon: Jest },
   { skill: "Vitest", icon: Vitest },
   { skill: "Cypress", icon: Cypress },
+];
+const utilitySkills = [
+  // { skill: "Snyk", icon: null },
+  { skill: "Git", icon: Git },
+
   { skill: "Figma", icon: Figma },
   { skill: "Confluence", icon: Confluence },
 ];
@@ -114,14 +120,34 @@ const Cv: React.FC = () => {
       </div>
       <div className={style.skillsPanel}>
         <h1>Skills</h1>
+        <h2>Languages and frameworks</h2>
         <div className={style.skills}>
-          {skills.map((skill) => {
+          {feSkills.map((skill) => {
             return (
               <div className={style.skill}>
-                <img
-                  src={skill.icon}
-                  // alt={}
-                />
+                <img src={skill.icon} alt={`${skill.skill} icon`} />
+                <h3>{skill.skill}</h3>
+              </div>
+            );
+          })}
+        </div>
+        <h2>Testing</h2>
+        <div className={style.skills}>
+          {testingSkills.map((skill) => {
+            return (
+              <div className={style.skill}>
+                <img src={skill.icon} alt={`${skill.skill} icon`} />
+                <h3>{skill.skill}</h3>
+              </div>
+            );
+          })}
+        </div>
+        <h2>Development tools and Utilities</h2>
+        <div className={style.skills}>
+          {utilitySkills.map((skill) => {
+            return (
+              <div className={style.skill}>
+                <img src={skill.icon} alt={`${skill.skill} icon`} />
                 <h3>{skill.skill}</h3>
               </div>
             );

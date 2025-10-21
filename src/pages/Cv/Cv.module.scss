@@ -44,15 +44,23 @@
     h1 {
       padding-left: 16px;
     }
+    h2 {
+      color: var(--text-color);
+    }
     h3 {
       color: var(--contrast-color);
     }
-
-    .skill {
-      display: flex;
-      flex-direction: column;
+    .skills {
+      display: inline-flex;
       align-items: center;
+      gap: 16px;
+      .skill {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+      }
     }
+
     img {
       height: 64px;
     }
