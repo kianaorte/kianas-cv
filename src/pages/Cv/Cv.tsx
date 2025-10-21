@@ -24,7 +24,6 @@ const experience = [
     place: "Sisters United, Auckland, New Zealand",
   },
 ];
-
 const volunteer = [
   {
     date: "2025 - Present",
@@ -42,7 +41,6 @@ const volunteer = [
     place: "Code Club Aotearoa, Auckland, New Zealand",
   },
 ];
-
 const feSkills = [
   {
     skill: "JavaScript",
@@ -69,7 +67,6 @@ const feSkills = [
     icon: "https://upload.wikimedia.org/wikipedia/commons/9/95/Vue.js_Logo_2.svg",
   },
 ];
-
 const testingSkills = [
   { skill: "Jest", icon: Jest },
   { skill: "Vitest", icon: Vitest },
@@ -86,21 +83,23 @@ const utilitySkills = [
 const Cv: React.FC = () => {
   return (
     <div className={style.page}>
-      <div className={style.panel}>
-        <h1>Experience</h1>
-        {experience.map((exp) => {
-          return (
-            <div className={style.content}>
-              <div>
-                <h2>{exp.date}</h2>
+      <div>
+        <div className={style.panel}>
+          <h1>Experience</h1>
+          {experience.map((exp) => {
+            return (
+              <div className={style.content}>
+                <div>
+                  <h2>{exp.date}</h2>
+                </div>
+                <div>
+                  <h2>{exp.place}</h2>
+                  <p>{exp.position}</p>
+                </div>
               </div>
-              <div>
-                <h2>{exp.place}</h2>
-                <p>{exp.position}</p>
-              </div>
-            </div>
-          );
-        })}
+            );
+          })}
+        </div>
         <div className={style.volunteer}>
           <h1>Volunteer work</h1>
           {volunteer.map((vol) => {

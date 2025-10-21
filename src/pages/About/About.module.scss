@@ -2,7 +2,7 @@
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
-  min-height: 960px;
+  // min-height: 960px;
   background-color: var(--secondary-bg-color);
   gap: 24px;
 
@@ -13,12 +13,12 @@
     width: 50%;
     .content {
       padding: 24px;
-      font-size: 24px;
+      // font-size: 24px;
       min-width: 360px;
       background-color: var(--main-bg-color);
       h1 {
         margin: 0 0 0 0;
-        font-size: 60px;
+        // font-size: 60px;
       }
       p {
         color: white;
@@ -30,15 +30,21 @@
       background-color: var(--accent-color);
       a {
         color: white;
-        font-size: 36px;
+        // font-size: 36px;
         text-decoration: none;
       }
     }
   }
+  .imgContainer {
+    display: flex;
+    width: 400px;
+    height: 400px;
+    align-self: center;
+  }
   img {
-    margin-top: 10%;
-    height: 560px;
-    // max-width: 50%;
+    width: 100%;
+    height: fit-content;
+    object-fit: cover;
     border: 8px solid var(--accent-color);
   }
 }

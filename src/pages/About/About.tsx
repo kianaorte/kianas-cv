@@ -26,7 +26,9 @@ const About: React.FC = () => {
         </div>
       </div>
       {/* placeholder until i find cute photo */}
-      <img src={Photo} alt="Photo" />
+      <div className={style.imgContainer}>
+        <img src={Photo} alt="Photo" />
+      </div>
     </div>
   );
 };
