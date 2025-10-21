@@ -2,7 +2,8 @@
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
-  // min-height: 960px;
+  height: 865px;
+  padding: 24px;
   background-color: var(--secondary-bg-color);
   gap: 24px;
 
@@ -13,12 +14,10 @@
     width: 50%;
     .content {
       padding: 24px;
-      // font-size: 24px;
       min-width: 360px;
       background-color: var(--main-bg-color);
       h1 {
         margin: 0 0 0 0;
-        // font-size: 60px;
       }
       p {
         color: white;
@@ -30,7 +29,6 @@
       background-color: var(--accent-color);
       a {
         color: white;
-        // font-size: 36px;
         text-decoration: none;
       }
     }

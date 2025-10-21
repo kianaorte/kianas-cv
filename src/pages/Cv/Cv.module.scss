@@ -1,6 +1,7 @@
 .page {
   display: flex;
   flex-grow: 1;
+  height: 865px;
   background-color: var(--secondary-bg-color);
   .panel {
     padding: 32px;
@@ -36,6 +37,7 @@
   }
   .skillsPanel {
     @extend .panel;
+    height: 50%;
     flex-direction: column;
     background-color: var(--secondary-bg-color);
     h1 {
