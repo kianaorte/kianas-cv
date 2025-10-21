@@ -1,0 +1,48 @@
+.page {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  height: 865px;
+  padding: 24px;
+  background-color: var(--secondary-bg-color);
+  gap: 24px;
+
+  .card {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: 50%;
+    .content {
+      padding: 24px;
+      min-width: 360px;
+      background-color: var(--main-bg-color);
+      h1 {
+        margin: 0 0 0 0;
+      }
+      p {
+        color: white;
+      }
+    }
+    .link {
+      padding: 24px;
+      min-width: 360px;
+      background-color: var(--accent-color);
+      a {
+        color: white;
+        text-decoration: none;
+      }
+    }
+  }
+  .imgContainer {
+    display: flex;
+    width: 400px;
+    height: 400px;
+    align-self: center;
+  }
+  img {
+    width: 100%;
+    height: fit-content;
+    object-fit: cover;
+    border: 8px solid var(--accent-color);
+  }
+}

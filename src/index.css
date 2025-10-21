@@ -1,7 +1,7 @@
 :root {
   --main-bg-color: #1b1a33;
   --secondary-bg-color: #ffe3d8;
-  --accent-text: #ff6b6b;
+  --accent-color: #ff6b6b;
   --contrast-color: #1c3f60;
   --accent-pop: #b9e3c6;
   --text-color: #0e0e0e;
@@ -13,7 +13,7 @@ h3,
 h4,
 h5,
 h6 {
-  color: var(--accent-text);
+  color: var(--accent-color);
 }
 h2 {
   color: #ffffff;

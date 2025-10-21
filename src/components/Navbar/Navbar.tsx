@@ -25,12 +25,13 @@ const Navbar: React.FC<NavbarProps> = ({ onNavigate, sections }) => {
       <button
         className={styles.btn}
         onClick={() => {
-          onNavigate(sections.about);
-          navigate("/about");
+          onNavigate(sections.home);
+          navigate("/");
         }}
       >
-        About me
+        Home
       </button>
+
       <button
         className={styles.btn}
         onClick={() => {
