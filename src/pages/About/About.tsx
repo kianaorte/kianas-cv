@@ -15,8 +15,8 @@ const About: React.FC = () => {
             into interactive interfaces using React, TypeScript, and a sprinkle
             of design thinking. I care a lot about good UX, performance, and
             writing code that’s easy to read and maintain. When I’m not coding,
-            you’ll probably find me gaming, travelling, exploring new TCGs, or
-            geeking out over cool UI designs.
+            you’ll probably find me gaming, travelling, eating out, or geeking
+            out over cool UI designs.
           </p>
         </div>
         <div className={style.link}>

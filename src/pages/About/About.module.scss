@@ -2,9 +2,8 @@
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
-  // min-height: 960px;
+  min-height: 960px;
   background-color: var(--secondary-bg-color);
-  padding-top: 10%;
   gap: 24px;
 
   .card {
@@ -37,7 +36,9 @@
     }
   }
   img {
+    margin-top: 10%;
     height: 560px;
+    // max-width: 50%;
     border: 8px solid var(--accent-color);
   }
 }
