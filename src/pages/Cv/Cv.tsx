@@ -1,7 +1,9 @@
-import Git from "../../assets/git.svg";
-import Vitest from "../../assets/vitest.svg";
-import Figma from "../../assets/figma.svg";
-import Confluence from "../../assets/confluence.svg";
+import Git from "../../assets/icons/git.svg";
+import Vitest from "../../assets/icons/vitest.svg";
+import Figma from "../../assets/icons/figma.svg";
+import Confluence from "../../assets/icons/confluence.svg";
+import Jest from "../../assets/icons/Jest.svg";
+import Cypress from "../../assets/icons/cypress.svg";
 
 import style from "../Cv/Cv.module.scss";
 
@@ -68,9 +70,9 @@ const skills = [
   },
   // { skill: "Snyk", icon: null },
   { skill: "Git", icon: Git },
-  { skill: "Jest", icon: null },
+  { skill: "Jest", icon: Jest },
   { skill: "Vitest", icon: Vitest },
-  { skill: "Cypress", icon: null },
+  { skill: "Cypress", icon: Cypress },
   { skill: "Figma", icon: Figma },
   { skill: "Confluence", icon: Confluence },
 ];
@@ -110,7 +112,7 @@ const Cv: React.FC = () => {
           })}
         </div>
       </div>
-      <div className={style.panel}>
+      <div className={style.skillsPanel}>
         <h1>Skills</h1>
         <div className={style.skills}>
           {skills.map((skill) => {
