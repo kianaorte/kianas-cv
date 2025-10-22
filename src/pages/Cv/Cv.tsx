@@ -83,8 +83,8 @@ const utilitySkills = [
 const Cv: React.FC = () => {
   return (
     <div className={style.page}>
-      <div>
-        <div className={style.panel}>
+      <div className={style.panel}>
+        <div className={style.experience}>
           <h1>Experience</h1>
           {experience.map((exp) => {
             return (
