@@ -1,9 +1,11 @@
 .page {
   display: flex;
-  flex-grow: 1;
   height: 865px;
   background-color: var(--secondary-bg-color);
   .panel {
+    background-color: var(--accent-color);
+  }
+  .experience {
     padding: 32px;
     margin: 0;
     background-color: var(--main-bg-color);
@@ -13,19 +15,19 @@
   }
 
   .volunteer {
-    @extend .panel;
-    height: auto;
+    @extend .experience;
+    background-color: var(--accent-color);
     h1 {
-      padding-left: 16px;
       color: var(--contrast-color);
     }
-    background-color: var(--accent-color);
   }
 
   .content {
-    display: flex;
-    flex-direction: row;
+    display: grid;
+    grid-template-columns: 0.5fr 1fr;
+    align-items: start;
     gap: 16px;
+    margin-bottom: 12px;
     h2 {
       margin-bottom: 0;
       font-size: 16px;
@@ -36,8 +38,7 @@
     }
   }
   .skillsPanel {
-    @extend .panel;
-    height: 50%;
+    @extend .experience;
     flex-direction: column;
     background-color: var(--secondary-bg-color);
     h1 {
